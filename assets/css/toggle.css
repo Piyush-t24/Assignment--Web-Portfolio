@@ -1,0 +1,61 @@
+/* Dark Mode Styles */
+body.dark-mode {
+  --background-color: #121212; /* Dark background */
+  --default-color: #e0e0e0; /* Light text */
+  --heading-color: #ffffff; /* White headings */
+  --accent-color: #bb86fc; /* Purple accent */
+  --surface-color: #1e1e1e; /* Dark surface */
+  --contrast-color: #000000; /* Black contrast */
+}
+
+Navbar Dark Mode Styles
+body.dark-mode nav {
+  background-color: #1e1e1e; /* Dark navbar background */
+}
+
+body.dark-mode .side-nav a {
+  color: #e0e0e0; /* Light text for navbar links */
+}
+
+body.dark-mode .side-nav a:hover {
+  color: #bb86fc; /* Purple accent on hover */
+}
+
+/* Card Dark Mode Styles */
+body.dark-mode .card {
+  background-color: #1e1e1e; /* Dark card background */
+  color: #e0e0e0; /* Light text */
+}
+
+body.dark-mode .card .card-title {
+  color: #ffffff; /* White card titles */
+}
+
+/* Table Dark Mode Styles */
+body.dark-mode .education-table table {
+  background-color: #1e1e1e; /* Dark table background */
+  color: #e0e0e0; /* Light text */
+}
+
+body.dark-mode .education-table th {
+  background-color: #333; /* Dark table header */
+  color: #ffffff; /* White text */
+}
+
+body.dark-mode .education-table td {
+  color: #e0e0e0; /* Light text */
+}
+
+body.dark-mode .education-table tbody tr:hover {
+  background-color: #333; /* Dark hover background */
+}
+
+/* Button Dark Mode Styles */
+body.dark-mode button {
+  background-color: #bb86fc; /* Purple button background */
+  color: #000000; /* Black text */
+}
+
+body.dark-mode button:hover {
+  background-color: #9c64d6; /* Darker purple on hover */
+}
