@@ -10,7 +10,7 @@ body.dark-mode {
 
 Navbar Dark Mode Styles
 body.dark-mode nav {
-  background-color: #1e1e1e; /* Dark navbar background */
+  background-color: #000000; /* Dark navbar background */
 }
 
 body.dark-mode .side-nav a {

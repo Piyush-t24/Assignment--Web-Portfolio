@@ -118,3 +118,82 @@ document.addEventListener('DOMContentLoaded', function () {
     type();
   }
   document.addEventListener("DOMContentLoaded", typeEffect);
+
+
+  // Slider 
+let currentIndex = 0; 
+let autoSlideInterval; 
+
+// Function to move the slider
+function slide(direction) {
+  const slider = document.querySelector(".slider");
+  const cards = document.querySelectorAll(".slider-card");
+  const totalCards = cards.length;
+
+  // Update the current index
+  currentIndex += direction;
+
+  // Handle edge cases
+  if (currentIndex < 0) {
+    currentIndex = totalCards - 1; 
+  } else if (currentIndex >= totalCards) {
+    currentIndex = 0; 
+  }
+
+  // Move the slider
+  const offset = -currentIndex * 100; 
+  slider.style.transform = `translateX(${offset}%)`;
+}
+
+// Function to start auto-slide
+function startAutoSlide() {
+  autoSlideInterval = setInterval(() => {
+    slide(1); 
+  }, 3000); 
+}
+
+// Function to stop auto-slide
+function stopAutoSlide() {
+  clearInterval(autoSlideInterval);
+}
+
+// Start auto-slide when the page loads
+document.addEventListener("DOMContentLoaded", () => {
+  startAutoSlide();
+});
+
+// Optional: Stop auto-slide when the user interacts with the slider
+const sliderContainer = document.querySelector(".slider-container");
+sliderContainer.addEventListener("mouseenter", stopAutoSlide); 
+sliderContainer.addEventListener("mouseleave", startAutoSlide);
+
+
+
+// Progress bar
+document.addEventListener("DOMContentLoaded", function () {
+  const skillItems = document.querySelectorAll(".col.s4.m2");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const progressBar = entry.target.querySelector(".progress");
+          const width = progressBar.style.width; 
+          progressBar.style.width = "0"; 
+          setTimeout(() => {
+            progressBar.style.width = width; 
+          }, 100); 
+          observer.unobserve(entry.target); 
+        }
+      });
+    },
+    {
+      threshold: 0.5, 
+    }
+  );
+
+  // Observe each skill item
+  skillItems.forEach((item) => {
+    observer.observe(item);
+  });
+});
