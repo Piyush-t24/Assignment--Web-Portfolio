@@ -63,28 +63,22 @@ a:hover {
 
 
 /*     */
-/* Typing Effect Styles */
-#typing-effect {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: #333; /* Dark text color */
-  border-right: 2px solid #333; /* Cursor effect */
-  white-space: nowrap; /* Prevent text from wrapping */
-  overflow: hidden; /* Hide overflow */
-  display: inline-block; /* Ensure cursor stays at the end */
-  animation: blink-caret 0.75s step-end infinite; /* Cursor blink animation */
-}
-
-/* Cursor Blink Animation */
-@keyframes blink-caret {
-  from, to {
-    border-right-color: transparent; /* Hide cursor */
+  /* Typing Effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
   }
-  50% {
-    border-right-color: #333; /* Show cursor */
+  @keyframes blink {
+    50% { border-color: transparent; }
   }
-}
-
+  
+  .typing-container {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 3px solid white;
+    white-space: nowrap;
+    animation: typing 3s steps(20, end) infinite, blink 0.7s infinite;
+  }
 
 
 .profile-pic {
@@ -461,8 +455,8 @@ h3 {
   .quote-section {
     text-align: center;
     padding: 15px;
-    font-size: 36px; /* Increased font size */
-    color: #f9532d; /* Different color for visibility */
+    font-size: 35px; /* Increased font size */
+    color: #FFFFFF; /* Different color for visibility */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -470,6 +464,7 @@ h3 {
     width: 100%;
     margin-top: auto;
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   #new-quote {
     background: none;

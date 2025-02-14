@@ -96,21 +96,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Typing Effect
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const text =
-      "Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and challenging ";
-    const typingElement = document.getElementById("typing-effect");
-    let index = 0;
+  function typeEffect() {
+    const text = "Gupta";
+    let i = 0;
+    const speed = 150;
+    const typingText = document.getElementById("typing-text");
 
     function type() {
-      if (index < text.length) {
-        typingElement.textContent += text.charAt(index);
-        index++;
-        setTimeout(type, 50); // Adjust typing speed (50ms per character)
+      if (i <= text.length) {
+        typingText.innerHTML = text.substring(0, i);
+        i++;
+        setTimeout(type, speed);
+      } else {
+        setTimeout(() => {
+          i = 0;
+          typingText.innerHTML = "";
+          type();
+        }, 1000);
       }
     }
-
-    // Start typing effect
-    typingElement.textContent = ""; // Clear initial text
     type();
-  });
+  }
+  document.addEventListener("DOMContentLoaded", typeEffect);
