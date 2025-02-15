@@ -20,7 +20,7 @@
   document.getElementById("new-quote").addEventListener("click", getRandomQuote);
 
 
-
+// ---------------------------------------------------
 // Form VAlidation
 document
   .getElementById("contactForm")
@@ -62,7 +62,7 @@ document
     }
   });
 
-
+// ---------------------------------------------------
   // Dark Mode Toggle Functionality
 document.addEventListener('DOMContentLoaded', function () {
   const darkModeToggle = document.getElementById('dark-mode-toggle');
@@ -94,6 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// ---------------------------------------------------
 // Typing Effect
 
   function typeEffect() {
@@ -120,6 +121,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.addEventListener("DOMContentLoaded", typeEffect);
 
 
+  // -------------------------------------------------
   // Slider 
 let currentIndex = 0; 
 let autoSlideInterval; 
@@ -169,6 +171,8 @@ sliderContainer.addEventListener("mouseleave", startAutoSlide);
 
 
 
+
+// ----------------------------------------------------
 // Progress bar
 document.addEventListener("DOMContentLoaded", function () {
   const skillItems = document.querySelectorAll(".col.s4.m2");
@@ -197,3 +201,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(item);
   });
 });
+
+
+
+// ---------------------------------------------

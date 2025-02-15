@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -164,7 +164,7 @@
                     <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoPvxJtYJq2-7BDn6LGcQ6QsT3Bo0vxkKu8WAOZnqsHIiTtGJqsHHHWlqqYN4iQFlVaqTaq7AFkWbY5Wrqxvk9Se1Wc_rjA7UKZoXHoxqSWXyaTg9aL9RC37H78NTnT4TwePdwqEYwVw8VxtjPoy6eG-f7RTJhX0JCa0lPmpfaz69hJ1ZHI9seBrUuvf4/s64/instagram.png" alt="Instagram" />
                 </div>
                 <div class="icon-block">
-                    <img src="https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png" alt="Twitter" />
+                    <img src="https://images.seeklogo.com/logo-png/49/1/twitter-x-logo-png_seeklogo-492396.png" alt="Twitter" />
                 </div>
                 <div class="icon-block">
                     <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="LinkedIn" />
@@ -196,34 +196,47 @@
 
 
     <!-- Second Section: About -->
-    <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
-      <div class="container flow-text">       
-        <p>
-          I'm Piyush Gupta, a passionate and driven web developer currently pursuing my second year of studies. With a keen interest in full-stack development, I thrive on building functional, user-friendly, and visually appealing web applications.
-
-          As someone who enjoys collaborating with other developers, I have actively contributed to open-source projects through platforms like <b>Hacktoberfest</b>, <b>GSSoC</b> ,<b>WOB</b> and <b>Social Winter of Code</b> as both a participant and a mentor.
-
-          When I'm not coding, I enjoy exploring new ideas, mentoring others, and working on creative problem-solving tasks that push the boundaries of my knowledge.
-
-            Feel free to explore my portfolio and connect with me to know more about my journey!
-        </p>
-        <p>
-          <ul>
-            <li><b>Languages:</b> C, C++, HTML, CSS,JavaScript.</li>
-            <li><b>Databases:</b> MySQL, MongoDB.</li>
-            <li><b>Libraries:</b> ReactJS, Express.js.</li>
-            <li><b>Frameworks:</b> Bootstrap, Tailwind CSS.</li>
-            <li><b>Tools & Technologies:</b>Git & Github, Postman, NPM, VS Code.</li>
-          </ul>
-          
-        </p>
-          
-        <p>
-          Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.
-        </p>
+<!-- About Section -->
+<section id="about" class="section scrollspy">
+  <h3 class="page-title white-text teal">About</h3>
+  <div class="container">
+    <div class="row">
+      <!-- Text Content (Left Side) -->
+      <div class="col s12 m8">
+        <div class="flow-text">
+          <p>
+            I'm <span class="teal-text">Piyush Gupta</span>, a passionate and driven web developer currently pursuing my second year of studies. With a keen interest in full-stack development, I thrive on building functional, user-friendly, and visually appealing web applications.
+          </p>
+          <p>
+            As someone who enjoys collaborating with other developers, I have actively contributed to open-source projects through platforms like <b>Hacktoberfest</b>, <b>GSSoC</b>, <b>WOB</b>, and <b>Social Winter of Code</b> as both a participant and a mentor.
+          </p>
+          <p>
+            When I'm not coding, I enjoy exploring new ideas, mentoring others, and working on creative problem-solving tasks that push the boundaries of my knowledge.
+          </p>
+          <p>
+            <ul>
+              <li><b>Languages:</b> C, C++, HTML, CSS, JavaScript.</li>
+              <li><b>Databases:</b> MySQL, MongoDB.</li>
+              <li><b>Libraries:</b> ReactJS, Express.js.</li>
+              <li><b>Frameworks:</b> Bootstrap, Tailwind CSS.</li>
+              <li><b>Tools & Technologies:</b> Git & GitHub, Postman, NPM, VS Code.</li>
+            </ul>
+          </p>
+          <p>
+            Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences, and personal growth.
+          </p>
+        </div>
       </div>
-    </section>
+
+      <!-- Image (Right Side) -->
+      <div class="col s12 m4">
+        <div class="image-container">
+          <img src="./assets/img/banner-image.png" alt="Piyush Gupta" class="responsive-img circle" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
@@ -447,7 +460,7 @@
               </div>
             </div>
           </div>
-
+           <!-- Spotify project -->
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
@@ -478,7 +491,7 @@
             </div>
           </div>
 
-          <!-- Flask Project -->
+          <!-- Snake Project -->
           <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
@@ -548,8 +561,6 @@
               </div>
             </div>
           </div>
-          
-          <!-- ************* -->
         </div>
       </div>
     </section>
@@ -838,7 +849,6 @@
                 <p>
                   <b>Degree: </b>Bachelor of Technology in Information Technology
                   <br>
-                  <!-- <b>CGPA: </b>3.13/4.33 -->
                 </p>
 
                 <ul>
@@ -1029,9 +1039,9 @@
       $(".scrollspy").scrollSpy()
       // Initialize collapse button
       $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        menuWidth: 190,             // Default is 240
+        edge: "left",               // Choose the horizontal origin
+        closeOnClick: true          // Closes side-nav on <a> clicks, useful for Angular/Meteor
       })
     })
   </script>
